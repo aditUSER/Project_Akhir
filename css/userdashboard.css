@@ -1,0 +1,24 @@
+/* styles.css */
+
+/* Gaya untuk container dashboard */
+.dashboard-container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Gaya untuk card */
+.card {
+    margin: auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Gaya untuk tombol logout */
+.logout-btn {
+    margin-top: 20px;
+}
+
+/* Tab styling */
+.nav-pills {
+    margin-bottom: 20px;
+}

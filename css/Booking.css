@@ -1,0 +1,178 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif; /* Mengganti font default ke Arial */
+    background-image: url('../images/Basic.png'); /* Path gambar background */
+    background-size: cover; /* Mengatur ukuran background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin: 0 0 20px 0;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 4px; /* Tambahkan border radius untuk sudut yang lebih halus */
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+textarea {
+    height: 100px; /* Atur tinggi textarea */
+    resize: vertical; /* Hanya izinkan perubahan ukuran secara vertikal */
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #5e3404; /* Warna tombol */
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 4px; /* Tambahkan border radius untuk sudut tombol */
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #e0c8ab; /* Warna saat hover */
+}
+
+.btn-cancel {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff; /* Tambahkan border pada tombol cancel */
+}
+
+.btn-cancel:hover {
+    background-color: #ddd; /* Warna saat hover */
+}
+
+.bubble {
+    position: relative;
+    background-color: #ffeb3b;
+    color: #000;
+    border: 1px solid #fbc02d;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.bubble:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #ffeb3b transparent transparent;
+    transform: translateY(-50%);
+}
+
+.bubble p {
+    margin: 0;
+}
+
+.bubble:hover {
+    background-color: #fdd835; /* Warna saat hover */
+}
+
+/* Styling for disabled button */
+.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    color: #5a310970;
+}
+
+/* Styling for enabled button */
+.enabled {
+    background-color: #492d03;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .section-one-heading {
+        font-size: 40px;
+    }
+
+    .section-two-heading {
+        font-size: 25px;
+    }
+
+    .section-two-paragraph {
+        font-size: 18px;
+    }
+
+    .sidebar-btn {
+        font-size: 24px;
+        padding: 8px 12px;
+    }
+
+    .sidebar a {
+        font-size: 20px;
+    }
+
+    .image-slider {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-one-heading {
+        font-size: 30px;
+    }
+
+    .section-two-heading {
+        font-size: 20px;
+    }
+
+    .section-two-paragraph {
+        font-size: 16px;
+    }
+
+    .sidebar-btn {
+        font-size: 20px;
+        padding: 6px 10px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}

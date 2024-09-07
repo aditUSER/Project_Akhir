@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient(to right, #fbc2eb, #a6c0fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    max-width: 600px;
+    background: #6d3f0ca1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(204, 125, 7, 0.363);
+    padding: 20px;
+    margin: 20px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.btn-primary {
+    background-color: #070841;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #3d040457;
+}
+.alert {
+    margin-bottom: 20px;
+}

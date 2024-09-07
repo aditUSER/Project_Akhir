@@ -1,0 +1,70 @@
+/* File: button-styles.css */
+
+/* Button Wrapper */
+.button-wrapper {
+    position: fixed; /* Fixes the position at the bottom */
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-bottom: 20px; /* Space from the bottom of the container */
+    padding: 10px;
+    background-color: #ffffff00; /* Optional: background color */
+}
+
+/* General Button Style */
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: center;
+    font-size: 16px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Submit Button Specific Style */
+.submit-btn {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    border: 2px solid #007bff; /* Blue border */
+    cursor: pointer; /* Pointer cursor for clickable items */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Disabled State */
+.submit-btn[disabled] {
+    background-color: #ccc; /* Light grey background for disabled state */
+    color: #666; /* Dark grey text for disabled state */
+    border-color: #ccc; /* Light grey border for disabled state */
+    cursor: not-allowed; /* Not-allowed cursor for disabled state */
+}
+
+/* Cancel Button Specific Style */
+.btn-cancel {
+    background-color: #f8f9fa; /* Light background */
+    color: #333; /* Dark text */
+    border: 2px solid #ccc; /* Light border */
+}
+
+/* Hover Effect */
+.btn:hover {
+    opacity: 0.8; /* Slightly transparent on hover */
+}
+
+/* Submit Button Hover Effect */
+.submit-btn:hover {
+    background-color: #613b18f5; /* Darker blue background */
+}
+
+/* Cancel Button Hover Effect */
+.btn-cancel:hover {
+    background-color: #e2e6ea; /* Slightly darker light background */
+    border-color: #bbb; /* Darker light border */
+}

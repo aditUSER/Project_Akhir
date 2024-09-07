@@ -1,0 +1,52 @@
+/* verify.css */
+
+/* Gaya untuk seluruh halaman */
+body {
+    background: linear-gradient(to right, #fbc2eb, #a6c0fe); /* Gradiant default */
+    background-image: url('../images/ppbc.jpg'); /* Ganti dengan path ke gambar background Anda */
+    background-size: cover; /* Mengatur gambar agar menutupi seluruh halaman */
+    background-position: center; /* Mengatur posisi gambar di tengah */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Gaya untuk container */
+.container {
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.8); /* Background semi-transparan untuk container */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Gaya untuk judul */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Gaya untuk input field */
+.form-group label {
+    font-weight: bold;
+    color: #555;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Gaya untuk tombol verifikasi */
+.btn-primary {
+    background-color: #5cb85c;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #4cae4c;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Housamekdy Trail Rent</title>
+    <link rel="stylesheet" href="css/Index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+</head>
+<body>
+
+                        <!-- Sidebar Toggle Button -->
+    <div id="sidebar-btn" class="sidebar-btn" onclick="openNav()">&#9776;</div>
+    
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#section-1">Home</a>
+        <a href="#section-2">About Us</a>
+        <a href="#section-3">Price List</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="frost-overlay"></div>
+
+    <div id="overlay" class="overlay"></div>
+
+    <!-- Section 1 -->
+    <section id="section-1" class="section-one">
+        <div class="content">
+            <h1 class="section-one-heading fade-in">WELCOME TO</h1>
+            <h1 class="section-one-heading fade-in">HOUSAMEKDY TRAIL RENT</h1>
+        </div>
+        <!-- Notification Section -->
+        <div id="notification" style="display:none; background-color: #d4edda; color: #155724; padding: 15px; border-radius: 5px; margin: 10px 0;">
+            <!-- Notification message will be displayed here -->
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="section-2" class="section-two">
+        <div class="container">
+            <h1 class="section-two-heading slide-in">Housamekdy Trail Rent</h1>
+            <p class="section-two-paragraph slide-in">At Housamekdy Trail Rent, we believe that the great outdoors has the power to inspire, educate, and connect people...</p>
+            <p class="section-two-paragraph slide-in">
+                We offer a variety of trails and services to meet your outdoor needs...
+                <a href="about-us.html" style="font-weight: bold; color: inherit; text-decoration: none;">Lihat selengkapnya</a>
+            </p>
+
+            <div class="image-slider">
+                <img src="images/image1.jpg" alt="Image 1">
+                <img src="images/image2.jpg" alt="Image 2" style="display:none;">
+                <img src="images/image3.jpg" alt="Image 3" style="display:none;">
+            </div>
+            <div class="slider-dots">
+                <div class="slider-dot active"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 -->
+    <section id="section-3" class="section-three">
+        <div class="container">
+            <h1 class="section-three-heading slide-in">Price List</h1>
+            <p class="section-three-paragraph slide-in">
+                Join us for an unforgettable adventure and get the best experience of the great outdoors 
+                with Housamekdy Trail Rent.
+            </p>
+            <p class="section-three-paragraph slide-in">
+                Check this out our offer price
+            </p>
+
+            <div class="pricelist-boxes">
+                <div id="pricelist-box-1" class="pricelist-box slide-in">
+                    <h2 class="box-heading">Weekday</h2>
+                    <p class="box-description">12 Hour - 200K*</p>
+                    <p class="box-description">24 Hour - 225K*</p>
+                    <p class="box-description">+Free 2 helmet for every season</p>
+                    <p class="box-price">*Please contact our admin to confirm the price</p>
+                </div>
+
+                <div id="pricelist-box-2" class="pricelist-box slide-in">
+                    <h2 class="box-heading">Weekend</h2>
+                    <p class="box-description">12 Hour - 225K*</p>
+                    <p class="box-description">24 Hour - 250K*</p>
+                    <p class="box-description">+Free 2 helmet for every season</p>
+                    <p class="box-price">*Please contact our admin to confirm the price</p>
+                </div>
+
+                <div id="pricelist-box-3" class="pricelist-box slide-in coming-soon">
+                    <div class="coming-soon-wrapper">
+                        <p class="coming-soon-text">Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Book Now Button -->
+            <a href="ftc/Session1_Booking.php" class="book-now-button">Book Now</a>
+        </div>
+    </section>
+
+    <!-- JavaScript for sidebar and notification -->
+    <script src="js/Index.js"></script>
+</body>
+</html>
